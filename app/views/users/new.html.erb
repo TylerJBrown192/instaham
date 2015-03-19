@@ -3,9 +3,13 @@
 <%=form_for User.new do |f| %>
   <%=f.label :email %>
   <%=f.text_field :email %>
+  <%= f.label :username %>
+  <%= f.text_field :username %>
   <%=f.label :password %>
   <%=f.password_field :password %>
   <%=f.label :password_confirmation %>
   <%=f.password_field :password_confirmation %>
+  <%= f.label :avatar %>
+  <%= f.file_field :avatar %>
   <%=f.submit "Sign Up" %>
 <% end %>
